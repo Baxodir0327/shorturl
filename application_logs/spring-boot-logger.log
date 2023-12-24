@@ -1,0 +1,972 @@
+2023-12-24 06:43:23,760 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 06:43:23,777 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 6718 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 06:43:23,777 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 06:43:23,804 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 06:43:23,804 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 06:43:24,195 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 06:43:24,221 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+2023-12-24 06:43:24,543 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 06:43:24,547 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 06:43:24,548 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 06:43:24,548 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 06:43:24,564 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 06:43:24,564 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 760 ms
+2023-12-24 06:43:24,585 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 06:43:24,724 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e0c6f64
+2023-12-24 06:43:24,724 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 06:43:24,730 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 06:43:24,813 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 06:43:24,836 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 06:43:24,850 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 06:43:24,935 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 06:43:25,382 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 06:43:25,420 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-12-24 06:43:25,420 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] constraint "uk_klvc3dss72qnlrjp2bai055mw" of relation "auth_user" does not exist, skipping
+2023-12-24 06:43:25,423 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-12-24 06:43:25,423 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] constraint "uk_t1iph3dfc25ukwcl9xemtnojn" of relation "auth_user" does not exist, skipping
+2023-12-24 06:43:25,425 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-12-24 06:43:25,425 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] constraint "uk_py4phjefb2urk7dixs9sypq2m" of relation "auth_user_otp" does not exist, skipping
+2023-12-24 06:43:25,427 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-12-24 06:43:25,427 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] constraint "uk_7nof5ra83mfkoaty3mfy8eimf" of relation "url" does not exist, skipping
+2023-12-24 06:43:25,430 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 06:43:25,540 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 06:43:25,992 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 06:43:26,150 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@78b701b6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d4bbd7, org.springframework.security.web.context.SecurityContextHolderFilter@3c10e72e, org.springframework.security.web.header.HeaderWriterFilter@3318fc4f, org.springframework.security.web.authentication.logout.LogoutFilter@76a5233e, uz.pdp.shorturl.config.security.JwtTokenFilter@5c15d9e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a201c2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19c615fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e2e213d, org.springframework.security.web.session.SessionManagementFilter@4f6982cb, org.springframework.security.web.access.ExceptionTranslationFilter@72ad0c8c, org.springframework.security.web.access.intercept.AuthorizationFilter@7bc0dbcc]
+2023-12-24 06:43:26,370 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 06:43:26,380 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 06:43:26,387 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 06:43:26,393 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 3.01 seconds (process running for 3.424)
+2023-12-24 06:43:50,545 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 06:43:50,547 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 06:43:50,551 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-24 06:43:53,083 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 06:43:53,098 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 6878 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 06:43:53,098 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 06:43:53,120 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 06:43:53,121 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 06:43:53,526 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 06:43:53,551 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2023-12-24 06:43:53,867 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 06:43:53,872 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 06:43:53,873 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 06:43:53,873 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 06:43:53,891 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 06:43:53,891 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 770 ms
+2023-12-24 06:43:53,911 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 06:43:54,024 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1412af81
+2023-12-24 06:43:54,025 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 06:43:54,030 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 06:43:54,101 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 06:43:54,130 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 06:43:54,145 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 06:43:54,237 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 06:43:54,649 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 06:43:54,673 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 06:43:54,797 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 06:43:55,240 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 06:43:55,417 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23eaccb3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@369ffbc8, org.springframework.security.web.context.SecurityContextHolderFilter@4d5da722, org.springframework.security.web.header.HeaderWriterFilter@16e946f0, org.springframework.security.web.authentication.logout.LogoutFilter@1dae859e, uz.pdp.shorturl.config.security.JwtTokenFilter@e85619e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54663c9d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d93c81f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fe1b076, org.springframework.security.web.session.SessionManagementFilter@29943204, org.springframework.security.web.access.ExceptionTranslationFilter@19c516db, org.springframework.security.web.access.intercept.AuthorizationFilter@663e7bd5]
+2023-12-24 06:43:55,639 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 06:43:55,650 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 06:43:55,656 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 06:43:55,663 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 2.937 seconds (process running for 3.321)
+2023-12-24 06:44:42,067 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 06:44:42,069 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 06:44:42,074 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-24 06:44:49,191 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 06:44:49,205 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 7045 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 06:44:49,205 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 06:44:49,227 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 06:44:49,227 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 06:44:49,625 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 06:44:49,651 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2023-12-24 06:44:49,959 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 06:44:49,971 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 06:44:49,972 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 06:44:49,973 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 06:44:49,991 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 06:44:49,991 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 764 ms
+2023-12-24 06:44:50,011 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 06:44:50,122 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@204d0d4d
+2023-12-24 06:44:50,123 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 06:44:50,128 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 06:44:50,199 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 06:44:50,221 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 06:44:50,235 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 06:44:50,324 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 06:44:50,730 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 06:44:50,747 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 06:44:50,890 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 06:44:51,331 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 06:44:51,491 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f239da1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35e6dea7, org.springframework.security.web.context.SecurityContextHolderFilter@59b06c1c, org.springframework.security.web.header.HeaderWriterFilter@2d793e66, org.springframework.security.web.authentication.logout.LogoutFilter@17d0f716, uz.pdp.shorturl.config.security.JwtTokenFilter@663e7bd5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29943204, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2476aa02, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31776ab, org.springframework.security.web.session.SessionManagementFilter@57842a21, org.springframework.security.web.access.ExceptionTranslationFilter@26e643b6, org.springframework.security.web.access.intercept.AuthorizationFilter@28545379]
+2023-12-24 06:44:51,721 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 06:44:51,731 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 06:44:51,738 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 06:44:51,744 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 2.905 seconds (process running for 3.255)
+2023-12-24 06:46:30,601 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 06:46:30,604 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 06:46:30,607 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-24 06:46:33,743 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 06:46:33,757 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 7494 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 06:46:33,758 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 06:46:33,780 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 06:46:33,780 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 06:46:34,199 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 06:46:34,223 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2023-12-24 06:46:34,531 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 06:46:34,535 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 06:46:34,536 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 06:46:34,536 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 06:46:34,552 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 06:46:34,552 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 771 ms
+2023-12-24 06:46:34,572 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 06:46:34,686 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ea0ff2d
+2023-12-24 06:46:34,687 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 06:46:34,692 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 06:46:34,763 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 06:46:34,787 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 06:46:34,803 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 06:46:34,922 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 06:46:35,340 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 06:46:35,385 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-12-24 06:46:35,385 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] constraint "uk_klvc3dss72qnlrjp2bai055mw" of relation "auth_user" does not exist, skipping
+2023-12-24 06:46:35,388 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-12-24 06:46:35,388 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] constraint "uk_t1iph3dfc25ukwcl9xemtnojn" of relation "auth_user" does not exist, skipping
+2023-12-24 06:46:35,390 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-12-24 06:46:35,390 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] constraint "uk_py4phjefb2urk7dixs9sypq2m" of relation "auth_user_otp" does not exist, skipping
+2023-12-24 06:46:35,392 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-12-24 06:46:35,392 WARN jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] constraint "uk_7nof5ra83mfkoaty3mfy8eimf" of relation "url" does not exist, skipping
+2023-12-24 06:46:35,395 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 06:46:35,553 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 06:46:36,074 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 06:46:36,271 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77b3d07e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67afc3b, org.springframework.security.web.context.SecurityContextHolderFilter@73154854, org.springframework.security.web.header.HeaderWriterFilter@202b23b8, org.springframework.security.web.authentication.logout.LogoutFilter@1ed8b9aa, uz.pdp.shorturl.config.security.JwtTokenFilter@319f2242, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d2366a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16c07d63, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fdf33b4, org.springframework.security.web.session.SessionManagementFilter@37558ccd, org.springframework.security.web.access.ExceptionTranslationFilter@4bf5ec12, org.springframework.security.web.access.intercept.AuthorizationFilter@1bad52a9]
+2023-12-24 06:46:36,589 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 06:46:36,604 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 06:46:36,613 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 06:46:36,623 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 3.242 seconds (process running for 3.609)
+2023-12-24 06:47:38,147 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 06:47:38,150 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 06:47:38,154 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-24 07:04:38,130 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 07:04:38,144 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 8268 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 07:04:38,144 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 07:04:38,167 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 07:04:38,167 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 07:04:38,584 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 07:04:38,609 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2023-12-24 07:04:38,944 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 07:04:38,949 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:04:38,950 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 07:04:38,950 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 07:04:38,968 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 07:04:38,969 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 802 ms
+2023-12-24 07:04:38,990 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 07:04:39,106 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@40f6a592
+2023-12-24 07:04:39,107 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 07:04:39,113 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 07:04:39,185 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 07:04:39,217 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 07:04:39,232 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 07:04:39,322 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 07:04:39,742 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 07:04:39,772 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:04:39,897 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 07:04:40,432 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 07:04:40,601 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b6c096c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1dae859e, org.springframework.security.web.context.SecurityContextHolderFilter@5de7eee6, org.springframework.security.web.header.HeaderWriterFilter@222a797e, org.springframework.security.web.authentication.logout.LogoutFilter@f1bfc6d, uz.pdp.shorturl.config.security.JwtTokenFilter@42d0e2ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79f8e164, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57842a21, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28545379, org.springframework.security.web.session.SessionManagementFilter@11a12393, org.springframework.security.web.access.ExceptionTranslationFilter@6d9d7159, org.springframework.security.web.access.intercept.AuthorizationFilter@251c631c]
+2023-12-24 07:04:40,840 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 07:04:40,851 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:04:40,858 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 07:04:40,865 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 3.104 seconds (process running for 3.53)
+2023-12-24 07:07:17,572 INFO tion$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-24 07:07:17,577 INFO               org.apache.juli.logging.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:07:17,582 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:07:17,584 INFO                 com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-12-24 07:07:17,587 INFO                 com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2023-12-24 07:07:17,649 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 8268 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 07:07:17,649 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 07:07:17,731 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 07:07:17,737 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 5 ms. Found 3 JPA repository interfaces.
+2023-12-24 07:07:17,820 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 07:07:17,820 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:07:17,820 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 07:07:17,821 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 07:07:17,825 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 07:07:17,825 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 175 ms
+2023-12-24 07:07:17,837 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2023-12-24 07:07:17,853 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@5165a5eb
+2023-12-24 07:07:17,853 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2023-12-24 07:07:17,854 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 07:07:17,883 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 07:07:17,884 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 07:07:17,885 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 07:07:17,941 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 07:07:17,951 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:07:18,156 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 07:07:18,250 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5ccfaf6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b156e2e, org.springframework.security.web.context.SecurityContextHolderFilter@4cbdeba, org.springframework.security.web.header.HeaderWriterFilter@7ea3f960, org.springframework.security.web.authentication.logout.LogoutFilter@53ac67ed, uz.pdp.shorturl.config.security.JwtTokenFilter@5f5c4a6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b224bf9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3aabd104, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11781380, org.springframework.security.web.session.SessionManagementFilter@2d93c871, org.springframework.security.web.access.ExceptionTranslationFilter@10e9ebf9, org.springframework.security.web.access.intercept.AuthorizationFilter@356f70b9]
+2023-12-24 07:07:18,381 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 07:07:18,388 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:07:18,389 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 07:07:18,392 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 0.759 seconds (process running for 161.057)
+2023-12-24 07:07:18,393 INFO oconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-12-24 07:07:26,072 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:07:26,073 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-12-24 07:07:26,075 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-12-24 07:36:32,677 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 07:36:32,692 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 10940 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 07:36:32,692 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 07:36:32,715 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 07:36:32,715 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 07:36:33,128 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 07:36:33,156 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2023-12-24 07:36:33,466 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 07:36:33,471 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:36:33,472 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 07:36:33,472 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 07:36:33,488 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 07:36:33,489 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 772 ms
+2023-12-24 07:36:33,509 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 07:36:33,620 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@204d0d4d
+2023-12-24 07:36:33,621 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 07:36:33,626 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 07:36:33,698 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 07:36:33,729 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 07:36:33,744 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 07:36:33,834 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 07:36:34,242 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 07:36:34,259 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:36:34,383 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 07:36:34,815 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 07:36:34,978 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f239da1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35e6dea7, org.springframework.security.web.context.SecurityContextHolderFilter@59b06c1c, org.springframework.security.web.header.HeaderWriterFilter@2d793e66, org.springframework.security.web.authentication.logout.LogoutFilter@17d0f716, uz.pdp.shorturl.config.security.JwtTokenFilter@663e7bd5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29943204, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2476aa02, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31776ab, org.springframework.security.web.session.SessionManagementFilter@57842a21, org.springframework.security.web.access.ExceptionTranslationFilter@26e643b6, org.springframework.security.web.access.intercept.AuthorizationFilter@28545379]
+2023-12-24 07:36:35,229 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 07:36:35,240 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:36:35,247 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 07:36:35,253 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 2.948 seconds (process running for 3.531)
+2023-12-24 07:36:38,425 INFO               org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 07:36:38,425 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-24 07:36:38,426 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-24 07:36:38,792 INFO          org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-9] Init duration for springdoc-openapi is: 129 ms
+2023-12-24 07:37:27,743 INFO tion$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2023-12-24 07:37:27,748 INFO               org.apache.juli.logging.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:37:27,759 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:37:27,762 INFO                 com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-12-24 07:37:27,768 INFO                 com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2023-12-24 07:37:27,891 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 10940 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 07:37:27,892 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 07:37:28,086 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 07:37:28,099 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
+2023-12-24 07:37:28,261 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 07:37:28,262 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:37:28,262 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 07:37:28,262 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 07:37:28,272 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 07:37:28,272 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 378 ms
+2023-12-24 07:37:28,300 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2023-12-24 07:37:28,329 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@52199453
+2023-12-24 07:37:28,330 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2023-12-24 07:37:28,330 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 07:37:28,385 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 07:37:28,387 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 07:37:28,390 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 07:37:28,470 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 07:37:28,485 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:37:28,813 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 07:37:28,962 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28d40629, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e20f115, org.springframework.security.web.context.SecurityContextHolderFilter@5ff7fdab, org.springframework.security.web.header.HeaderWriterFilter@127634dd, org.springframework.security.web.authentication.logout.LogoutFilter@5084d0c6, uz.pdp.shorturl.config.security.JwtTokenFilter@4d586832, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b2eae72, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@285da316, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19793660, org.springframework.security.web.session.SessionManagementFilter@6c9e84be, org.springframework.security.web.access.ExceptionTranslationFilter@66a65562, org.springframework.security.web.access.intercept.AuthorizationFilter@6ba7ea4b]
+2023-12-24 07:37:29,185 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 07:37:29,197 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:37:29,199 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 07:37:29,203 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 1.352 seconds (process running for 57.48)
+2023-12-24 07:37:29,204 INFO oconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-12-24 07:37:30,588 INFO tion$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2023-12-24 07:37:30,591 INFO               org.apache.juli.logging.DirectJDKLog [Thread-7] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:37:30,596 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:37:30,597 INFO                 com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2023-12-24 07:37:30,603 INFO                 com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2023-12-24 07:37:30,693 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 10940 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 07:37:30,693 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 07:37:30,829 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 07:37:30,837 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2023-12-24 07:37:30,975 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 07:37:30,975 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:37:30,975 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 07:37:30,975 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 07:37:30,985 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 07:37:30,986 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 291 ms
+2023-12-24 07:37:31,006 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2023-12-24 07:37:31,033 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@5c7af6c0
+2023-12-24 07:37:31,034 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2023-12-24 07:37:31,034 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 07:37:31,085 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 07:37:31,086 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 07:37:31,088 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 07:37:31,153 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 07:37:31,162 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:37:31,459 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 07:37:31,618 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c97a681, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13b17e50, org.springframework.security.web.context.SecurityContextHolderFilter@705c3b2, org.springframework.security.web.header.HeaderWriterFilter@7bb00d95, org.springframework.security.web.authentication.logout.LogoutFilter@70f9ec17, uz.pdp.shorturl.config.security.JwtTokenFilter@78ca9487, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72db8342, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9fce429, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6625c03a, org.springframework.security.web.session.SessionManagementFilter@c0b8df4, org.springframework.security.web.access.ExceptionTranslationFilter@70b0b37b, org.springframework.security.web.access.intercept.AuthorizationFilter@3025ca9e]
+2023-12-24 07:37:31,840 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 07:37:31,852 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:37:31,855 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 07:37:31,859 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 1.189 seconds (process running for 60.136)
+2023-12-24 07:37:31,860 INFO oconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-12-24 07:39:50,490 INFO tion$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2023-12-24 07:39:50,492 INFO               org.apache.juli.logging.DirectJDKLog [Thread-11] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:39:50,495 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-11] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:39:50,495 INFO                 com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-3 - Shutdown initiated...
+2023-12-24 07:39:50,498 INFO                 com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-3 - Shutdown completed.
+2023-12-24 07:39:50,582 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 10940 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 07:39:50,582 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 07:39:50,723 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 07:39:50,731 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2023-12-24 07:39:50,872 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 07:39:50,872 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:39:50,873 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 07:39:50,873 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 07:39:50,880 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 07:39:50,880 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 296 ms
+2023-12-24 07:39:50,905 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2023-12-24 07:39:50,933 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@1aaf04e6
+2023-12-24 07:39:50,933 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2023-12-24 07:39:50,934 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 07:39:50,987 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 07:39:50,989 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 07:39:50,991 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 07:39:51,055 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 07:39:51,074 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:39:51,424 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 07:39:51,582 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@480001b9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36da70b1, org.springframework.security.web.context.SecurityContextHolderFilter@5bcca5e1, org.springframework.security.web.header.HeaderWriterFilter@13ee44f5, org.springframework.security.web.authentication.logout.LogoutFilter@3c32c0a3, uz.pdp.shorturl.config.security.JwtTokenFilter@61ddd3ad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b3346df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a9b7ea0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c59aced, org.springframework.security.web.session.SessionManagementFilter@1f92fdcc, org.springframework.security.web.access.ExceptionTranslationFilter@1574b770, org.springframework.security.web.access.intercept.AuthorizationFilter@621df281]
+2023-12-24 07:39:51,813 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 07:39:51,824 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:39:51,827 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 07:39:51,831 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 1.273 seconds (process running for 200.109)
+2023-12-24 07:39:51,832 INFO oconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-12-24 07:39:53,218 INFO tion$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2023-12-24 07:39:53,222 INFO               org.apache.juli.logging.DirectJDKLog [Thread-15] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:39:53,226 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-15] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:39:53,227 INFO                 com.zaxxer.hikari.HikariDataSource [Thread-15] HikariPool-4 - Shutdown initiated...
+2023-12-24 07:39:53,232 INFO                 com.zaxxer.hikari.HikariDataSource [Thread-15] HikariPool-4 - Shutdown completed.
+2023-12-24 07:39:53,317 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 10940 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 07:39:53,317 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 07:39:53,438 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 07:39:53,446 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2023-12-24 07:39:53,577 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 07:39:53,577 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:39:53,577 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 07:39:53,577 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 07:39:53,584 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 07:39:53,584 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 266 ms
+2023-12-24 07:39:53,604 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2023-12-24 07:39:53,630 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@7743eed
+2023-12-24 07:39:53,630 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2023-12-24 07:39:53,630 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 07:39:53,682 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 07:39:53,683 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 07:39:53,685 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 07:39:53,738 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 07:39:53,747 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 07:39:54,037 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 07:39:54,178 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4fd456fc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70c26d8c, org.springframework.security.web.context.SecurityContextHolderFilter@4c76a5c1, org.springframework.security.web.header.HeaderWriterFilter@7aaf4d9, org.springframework.security.web.authentication.logout.LogoutFilter@37311311, uz.pdp.shorturl.config.security.JwtTokenFilter@154699ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2bd7b10f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b8b8490, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12d5f370, org.springframework.security.web.session.SessionManagementFilter@66fa6a94, org.springframework.security.web.access.ExceptionTranslationFilter@17de130b, org.springframework.security.web.access.intercept.AuthorizationFilter@6703c9a]
+2023-12-24 07:39:54,407 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 07:39:54,418 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 07:39:54,420 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 07:39:54,424 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 1.129 seconds (process running for 202.702)
+2023-12-24 07:39:54,425 INFO oconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-12-24 08:12:13,522 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 08:12:13,523 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-5 - Shutdown initiated...
+2023-12-24 08:12:13,527 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-5 - Shutdown completed.
+2023-12-24 08:12:17,548 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 08:12:17,571 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 13846 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 08:12:17,572 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 08:12:17,609 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 08:12:17,609 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 08:12:18,211 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 08:12:18,251 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2023-12-24 08:12:18,757 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 08:12:18,773 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 08:12:18,775 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 08:12:18,775 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 08:12:18,805 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 08:12:18,805 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1196 ms
+2023-12-24 08:12:18,839 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 08:12:19,036 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@40ca1362
+2023-12-24 08:12:19,037 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 08:12:19,047 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 08:12:19,165 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 08:12:19,198 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 08:12:19,219 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 08:12:19,374 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 08:12:20,056 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 08:12:20,087 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 08:12:20,292 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 08:12:21,035 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 08:12:21,303 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f1bfc6d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@118b62af, org.springframework.security.web.context.SecurityContextHolderFilter@6ea515a1, org.springframework.security.web.header.HeaderWriterFilter@1a0320c, org.springframework.security.web.authentication.logout.LogoutFilter@655cb0f9, uz.pdp.shorturl.config.security.JwtTokenFilter@29ec6681, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b6419af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f0b0886, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47beb808, org.springframework.security.web.session.SessionManagementFilter@74d6f93a, org.springframework.security.web.access.ExceptionTranslationFilter@7d51e6b1, org.springframework.security.web.access.intercept.AuthorizationFilter@26870120]
+2023-12-24 08:12:21,699 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 08:12:21,718 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 08:12:21,729 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 08:12:21,740 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 4.712 seconds (process running for 5.149)
+2023-12-24 08:12:29,018 INFO               org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 08:12:29,018 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-24 08:12:29,019 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-24 08:12:29,299 INFO          org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-1] Init duration for springdoc-openapi is: 238 ms
+2023-12-24 08:12:37,955 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-2] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/register*
+*errorCode : 500*
+*developerMessage* : `JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name`
+
+2023-12-24 08:12:39,126 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name]
+2023-12-24 08:13:00,096 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-3] Validation Error : 
+
+*friendlyMessage : Not Valid Input*
+*errorPath : /api/auth/register*
+*errorCode : 400*
+*developerMessage* : `{password=[must not be blank], email=[must not be blank]}`
+
+2023-12-24 08:13:00,296 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> uz.pdp.shorturl.controllers.AuthUserController.createUser(uz.pdp.shorturl.dtos.auth.AuthUserCreateDto) with 2 errors: [Field error in object 'authUserCreateDto' on field 'password': rejected value [null]; codes [NotBlank.authUserCreateDto.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [authUserCreateDto.password,password]; arguments []; default message [password]]; default message [must not be blank]] [Field error in object 'authUserCreateDto' on field 'email': rejected value [null]; codes [NotBlank.authUserCreateDto.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [authUserCreateDto.email,email]; arguments []; default message [email]]; default message [must not be blank]] ]
+2023-12-24 08:13:33,523 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-4] Validation Error : 
+
+*friendlyMessage : Not Valid Input*
+*errorPath : /api/auth/register*
+*errorCode : 400*
+*developerMessage* : `{password=[must not be blank], email=[must not be blank]}`
+
+2023-12-24 08:13:36,624 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> uz.pdp.shorturl.controllers.AuthUserController.createUser(uz.pdp.shorturl.dtos.auth.AuthUserCreateDto) with 2 errors: [Field error in object 'authUserCreateDto' on field 'email': rejected value [null]; codes [NotBlank.authUserCreateDto.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [authUserCreateDto.email,email]; arguments []; default message [email]]; default message [must not be blank]] [Field error in object 'authUserCreateDto' on field 'password': rejected value [null]; codes [NotBlank.authUserCreateDto.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [authUserCreateDto.password,password]; arguments []; default message [password]]; default message [must not be blank]] ]
+2023-12-24 08:32:42,416 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 08:32:42,420 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 08:32:42,425 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-24 08:32:47,124 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 08:32:47,147 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 14881 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 08:32:47,148 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 08:32:47,184 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 08:32:47,184 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 08:32:47,792 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 08:32:47,832 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2023-12-24 08:32:48,352 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 08:32:48,360 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 08:32:48,362 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 08:32:48,362 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 08:32:48,391 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 08:32:48,391 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1206 ms
+2023-12-24 08:32:48,426 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 08:32:48,622 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2f1fbc4b
+2023-12-24 08:32:48,623 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 08:32:48,633 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 08:32:48,754 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 08:32:48,792 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 08:32:48,814 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 08:32:48,959 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 08:32:49,633 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 08:32:49,680 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 08:32:49,874 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 08:32:50,591 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 08:32:50,870 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77b3d07e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67afc3b, org.springframework.security.web.context.SecurityContextHolderFilter@73154854, org.springframework.security.web.header.HeaderWriterFilter@202b23b8, org.springframework.security.web.authentication.logout.LogoutFilter@1ed8b9aa, uz.pdp.shorturl.config.security.JwtTokenFilter@319f2242, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d2366a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16c07d63, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fdf33b4, org.springframework.security.web.session.SessionManagementFilter@37558ccd, org.springframework.security.web.access.ExceptionTranslationFilter@4bf5ec12, org.springframework.security.web.access.intercept.AuthorizationFilter@1bad52a9]
+2023-12-24 08:32:51,263 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 08:32:51,281 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 08:32:51,292 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 08:32:51,302 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 4.672 seconds (process running for 5.126)
+2023-12-24 08:33:01,552 INFO               org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 08:33:01,553 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-24 08:33:01,554 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-24 08:33:01,665 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-1] Validation Error : 
+
+*friendlyMessage : Not Valid Input*
+*errorPath : /api/auth/register*
+*errorCode : 400*
+*developerMessage* : `{password=[must not be blank], email=[must not be blank]}`
+
+2023-12-24 08:33:02,478 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> uz.pdp.shorturl.controllers.AuthUserController.createUser(uz.pdp.shorturl.dtos.auth.AuthUserCreateDto) with 2 errors: [Field error in object 'authUserCreateDto' on field 'email': rejected value [null]; codes [NotBlank.authUserCreateDto.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [authUserCreateDto.email,email]; arguments []; default message [email]]; default message [must not be blank]] [Field error in object 'authUserCreateDto' on field 'password': rejected value [null]; codes [NotBlank.authUserCreateDto.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [authUserCreateDto.password,password]; arguments []; default message [password]]; default message [must not be blank]] ]
+2023-12-24 08:45:48,200 INFO tion$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-24 08:45:48,203 INFO               org.apache.juli.logging.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-24 08:45:48,208 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 08:45:48,211 INFO                 com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-12-24 08:45:48,217 INFO                 com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2023-12-24 08:45:48,310 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 14881 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 08:45:48,310 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 08:45:48,458 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 08:45:48,467 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2023-12-24 08:45:48,610 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 08:45:48,611 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 08:45:48,611 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 08:45:48,611 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 08:45:48,619 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 08:45:48,619 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 307 ms
+2023-12-24 08:45:48,658 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2023-12-24 08:45:48,690 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@32245af4
+2023-12-24 08:45:48,691 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2023-12-24 08:45:48,691 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 08:45:48,746 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 08:45:48,748 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 08:45:48,750 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 08:45:48,821 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 08:45:48,833 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 08:45:49,136 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 08:45:49,285 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8489b6e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a83c4af, org.springframework.security.web.context.SecurityContextHolderFilter@58a00e00, org.springframework.security.web.header.HeaderWriterFilter@2d46198c, org.springframework.security.web.authentication.logout.LogoutFilter@345c4345, uz.pdp.shorturl.config.security.JwtTokenFilter@1f6c08c0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34c12079, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29d6d514, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c34ad3, org.springframework.security.web.session.SessionManagementFilter@23fcc768, org.springframework.security.web.access.ExceptionTranslationFilter@340b10d5, org.springframework.security.web.access.intercept.AuthorizationFilter@5ed8bd9b]
+2023-12-24 08:45:49,513 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 08:45:49,525 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 08:45:49,529 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 08:45:49,533 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 1.249 seconds (process running for 783.357)
+2023-12-24 08:45:49,535 INFO oconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-12-24 08:49:58,482 INFO               org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 08:49:58,483 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-24 08:49:58,484 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-24 08:51:11,091 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-3] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/generate-token*
+*errorCode : 500*
+*developerMessage* : `User account is locked`
+
+2023-12-24 08:51:18,458 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.security.authentication.LockedException: User account is locked]
+2023-12-24 08:52:18,537 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-4] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/generate-token*
+*errorCode : 500*
+*developerMessage* : `User account is locked`
+
+2023-12-24 08:52:18,763 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.security.authentication.LockedException: User account is locked]
+2023-12-24 09:01:25,391 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-5] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/activate/ZjEwZjRkZGUtOTUzNy00OWNkLWEzYWItNjI2YTg3Y2NlNjg0MQ==*
+*errorCode : 500*
+*developerMessage* : `Code is expired`
+
+2023-12-24 09:01:25,983 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [java.lang.RuntimeException: Code is expired]
+2023-12-24 09:01:45,252 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-6] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/generate-token*
+*errorCode : 500*
+*developerMessage* : `User account is locked`
+
+2023-12-24 09:01:45,446 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.security.authentication.LockedException: User account is locked]
+2023-12-24 09:03:25,375 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 09:03:25,377 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-12-24 09:03:25,381 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-12-24 09:03:29,196 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 09:03:29,216 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 17010 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 09:03:29,217 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 09:03:29,255 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 09:03:29,256 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 09:03:29,905 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 09:03:29,951 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2023-12-24 09:03:30,500 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 09:03:30,509 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 09:03:30,510 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 09:03:30,510 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 09:03:30,545 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 09:03:30,546 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1289 ms
+2023-12-24 09:03:30,582 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 09:03:30,793 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7bf7679f
+2023-12-24 09:03:30,794 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 09:03:30,810 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 09:03:30,943 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 09:03:30,980 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 09:03:31,004 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 09:03:31,160 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 09:03:31,922 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 09:03:31,955 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 09:03:32,167 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 09:03:32,945 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 09:03:33,233 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39e53061, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14b67794, org.springframework.security.web.context.SecurityContextHolderFilter@5230f8bf, org.springframework.security.web.header.HeaderWriterFilter@786bc398, org.springframework.security.web.authentication.logout.LogoutFilter@5fb6037a, uz.pdp.shorturl.config.security.JwtTokenFilter@1615564a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@565860fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5025eddf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27f2a004, org.springframework.security.web.session.SessionManagementFilter@3a932b63, org.springframework.security.web.access.ExceptionTranslationFilter@746dbcd7, org.springframework.security.web.access.intercept.AuthorizationFilter@65c916e7]
+2023-12-24 09:03:33,655 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 09:03:33,675 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 09:03:33,688 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 09:03:33,699 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 5.053 seconds (process running for 5.902)
+2023-12-24 09:04:01,370 INFO               org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 09:04:01,371 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-24 09:04:01,372 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-24 09:10:16,889 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-3] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/activate/ZjEwZjRkZGUtOTUzNy00OWNkLWEzYWItNjI2YTg3Y2NlNjg0MQ==*
+*errorCode : 500*
+*developerMessage* : `Code is expired`
+
+2023-12-24 09:10:17,752 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [java.lang.RuntimeException: Code is expired]
+2023-12-24 09:11:23,510 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-7] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/generate-token*
+*errorCode : 500*
+*developerMessage* : `User account is locked`
+
+2023-12-24 09:11:23,701 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.security.authentication.LockedException: User account is locked]
+2023-12-24 09:22:32,667 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-10] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/activate/OTMxMDBlZDYtMWRhNi00ODkzLTgxYTItMDg0MTg1MDdlNjA2Mg==*
+*errorCode : 500*
+*developerMessage* : `Invalid Code`
+
+2023-12-24 09:22:33,461 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-10] Resolved [java.lang.RuntimeException: Invalid Code]
+2023-12-24 09:23:58,007 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-1] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/activate/OTMxMDBlZDYtMWRhNi00ODkzLTgxYTItMDg0MTg1MDdlNjA2Mg==*
+*errorCode : 500*
+*developerMessage* : `Invalid Code`
+
+2023-12-24 09:23:58,678 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [java.lang.RuntimeException: Invalid Code]
+2023-12-24 09:24:08,943 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-2] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/activate/OTMxMDBlZDYtMWRhNi00ODkzLTgxYTItMDg0MTg1MDdlNjA2Mg==*
+*errorCode : 500*
+*developerMessage* : `Invalid Code`
+
+2023-12-24 09:24:09,141 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [java.lang.RuntimeException: Invalid Code]
+2023-12-24 09:24:47,382 WARN      com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s384ms168µs685ns).
+2023-12-24 09:24:47,394 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-4] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/activate/OTMxMDBlZDYtMWRhNi00ODkzLTgxYTItMDg0MTg1MDdlNjA2Mg==*
+*errorCode : 500*
+*developerMessage* : `Invalid Code`
+
+2023-12-24 09:24:47,429 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 09:24:47,433 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 09:24:47,445 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-24 09:24:51,366 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 09:24:51,394 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 19000 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 09:24:51,396 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 09:24:51,443 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 09:24:51,443 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 09:24:52,109 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 09:24:52,155 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2023-12-24 09:24:52,720 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 09:24:52,730 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 09:24:52,731 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 09:24:52,731 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 09:24:52,764 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 09:24:52,765 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1321 ms
+2023-12-24 09:24:52,804 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 09:24:53,018 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7bf7679f
+2023-12-24 09:24:53,019 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 09:24:53,029 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 09:24:53,158 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 09:24:53,196 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 09:24:53,222 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 09:24:53,385 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 09:24:54,144 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 09:24:54,179 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 09:24:54,384 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 09:24:55,254 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 09:24:55,559 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39e53061, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14b67794, org.springframework.security.web.context.SecurityContextHolderFilter@5230f8bf, org.springframework.security.web.header.HeaderWriterFilter@786bc398, org.springframework.security.web.authentication.logout.LogoutFilter@5fb6037a, uz.pdp.shorturl.config.security.JwtTokenFilter@1615564a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@565860fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5025eddf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27f2a004, org.springframework.security.web.session.SessionManagementFilter@3a932b63, org.springframework.security.web.access.ExceptionTranslationFilter@746dbcd7, org.springframework.security.web.access.intercept.AuthorizationFilter@65c916e7]
+2023-12-24 09:24:55,978 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 09:24:56,001 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 09:24:56,014 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 09:24:56,027 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 5.224 seconds (process running for 5.775)
+2023-12-24 09:25:10,777 INFO               org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 09:25:10,777 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-24 09:25:10,779 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-24 09:25:50,569 WARN      com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s449ms622µs497ns).
+2023-12-24 09:25:58,062 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-1] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/activate/OTMxMDBlZDYtMWRhNi00ODkzLTgxYTItMDg0MTg1MDdlNjA2Mg==*
+*errorCode : 500*
+*developerMessage* : `Invalid Code`
+
+2023-12-24 09:25:58,869 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [java.lang.RuntimeException: Invalid Code]
+2023-12-24 09:25:58,937 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-2] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /favicon.ico*
+*errorCode : 500*
+*developerMessage* : `Url By Code not found`
+
+2023-12-24 09:25:59,642 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [java.lang.RuntimeException: Url By Code not found]
+2023-12-24 09:27:41,083 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-3] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/activate/OTMxMDBlZDYtMWRhNi00ODkzLTgxYTItMDg0MTg1MDdlNjA2Mg==*
+*errorCode : 500*
+*developerMessage* : `Invalid Code`
+
+2023-12-24 09:27:42,235 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [java.lang.RuntimeException: Invalid Code]
+2023-12-24 09:27:42,286 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-4] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /favicon.ico*
+*errorCode : 500*
+*developerMessage* : `Url By Code not found`
+
+2023-12-24 09:27:42,440 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [java.lang.RuntimeException: Url By Code not found]
+2023-12-24 09:33:12,185 WARN      com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m13s865ms468µs18ns).
+2023-12-24 09:33:12,229 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 09:33:12,233 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 09:33:12,239 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-24 09:33:16,517 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 09:33:16,543 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 19837 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 09:33:16,544 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 09:33:16,587 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 09:33:16,587 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 09:33:17,260 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 09:33:17,432 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 166 ms. Found 3 JPA repository interfaces.
+2023-12-24 09:33:18,357 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 09:33:18,369 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 09:33:18,372 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 09:33:18,372 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 09:33:18,427 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 09:33:18,427 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1839 ms
+2023-12-24 09:33:18,474 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 09:33:18,885 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b2f5b8c
+2023-12-24 09:33:18,889 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 09:33:18,902 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 09:33:19,099 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 09:33:19,179 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 09:33:19,230 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 09:33:19,563 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 09:33:21,063 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 09:33:21,134 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 09:33:21,494 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 09:33:22,698 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 09:33:23,136 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b6c9207, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@763c38a6, org.springframework.security.web.context.SecurityContextHolderFilter@1c0780ba, org.springframework.security.web.header.HeaderWriterFilter@4f03d894, org.springframework.security.web.authentication.logout.LogoutFilter@25e21e, uz.pdp.shorturl.config.security.JwtTokenFilter@5e94cf8a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52cfa7df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62e634c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ca9c5b1, org.springframework.security.web.session.SessionManagementFilter@21eb5c5f, org.springframework.security.web.access.ExceptionTranslationFilter@33ea6284, org.springframework.security.web.access.intercept.AuthorizationFilter@77195e82]
+2023-12-24 09:33:23,771 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 09:33:23,806 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 09:33:23,831 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 09:33:23,856 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 7.893 seconds (process running for 8.454)
+2023-12-24 09:33:32,732 INFO               org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 09:33:32,732 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-24 09:33:32,733 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-24 09:33:49,038 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-2] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/activate/MDQxM2MzNTYtZDhhMi00OWQzLTk4YzAtM2FlN2M3ODIwYWVjNg==*
+*errorCode : 500*
+*developerMessage* : `Invalid Code`
+
+2023-12-24 09:33:49,868 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [java.lang.RuntimeException: Invalid Code]
+2023-12-24 09:33:49,950 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-3] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /favicon.ico*
+*errorCode : 500*
+*developerMessage* : `Url By Code not found`
+
+2023-12-24 09:33:50,373 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [java.lang.RuntimeException: Url By Code not found]
+2023-12-24 09:34:47,340 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-4] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/auth/activate/MDQxM2MzNTYtZDhhMi00OWQzLTk4YzAtM2FlN2M3ODIwYWVjNg==*
+*errorCode : 500*
+*developerMessage* : `Invalid Code`
+
+2023-12-24 09:34:47,377 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 09:34:47,383 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 09:34:47,389 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-24 10:01:36,425 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 10:01:36,449 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 21425 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 10:01:36,450 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 10:01:36,486 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 10:01:36,486 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 10:01:37,083 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 10:01:37,124 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2023-12-24 10:01:37,641 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 10:01:37,650 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 10:01:37,651 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 10:01:37,651 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 10:01:37,680 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 10:01:37,680 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1194 ms
+2023-12-24 10:01:37,716 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 10:01:37,910 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@204d0d4d
+2023-12-24 10:01:37,911 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 10:01:37,921 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 10:01:38,039 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 10:01:38,076 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 10:01:38,098 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 10:01:38,248 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 10:01:38,922 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 10:01:38,966 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:01:39,158 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 10:01:39,927 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 10:01:40,208 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31776ab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@207a2dfd, org.springframework.security.web.context.SecurityContextHolderFilter@2476aa02, org.springframework.security.web.header.HeaderWriterFilter@19c516db, org.springframework.security.web.authentication.logout.LogoutFilter@4b142f5f, uz.pdp.shorturl.config.security.JwtTokenFilter@23eaccb3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d5da722, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45d1b89f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@369ffbc8, org.springframework.security.web.session.SessionManagementFilter@59b06c1c, org.springframework.security.web.access.ExceptionTranslationFilter@4b6419af, org.springframework.security.web.access.intercept.AuthorizationFilter@3f239da1]
+2023-12-24 10:01:40,605 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 10:01:40,624 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 10:01:40,635 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 10:01:40,645 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 4.715 seconds (process running for 5.138)
+2023-12-24 10:01:45,211 INFO               org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 10:01:45,211 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-24 10:01:45,212 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-24 10:04:17,548 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-3] Validation Error : 
+
+*friendlyMessage : Not Valid Input*
+*errorPath : /api/url*
+*errorCode : 400*
+*developerMessage* : `{expiresAt=[must be a future date]}`
+
+2023-12-24 10:04:20,041 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<uz.pdp.shorturl.entities.Url> uz.pdp.shorturl.controllers.UrlController.shortenUrl(uz.pdp.shorturl.services.UrlCreateDTO): [Field error in object 'urlCreateDTO' on field 'expiresAt': rejected value [2023-12-24T05:02:21.412]; codes [Future.urlCreateDTO.expiresAt,Future.expiresAt,Future.java.time.LocalDateTime,Future]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [urlCreateDTO.expiresAt,expiresAt]; arguments []; default message [expiresAt]]; default message [must be a future date]] ]
+2023-12-24 10:06:18,038 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-7] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/url/18c9503ck*
+*errorCode : 500*
+*developerMessage* : `Url By Code not found`
+
+2023-12-24 10:06:18,184 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [java.lang.RuntimeException: Url By Code not found]
+2023-12-24 10:07:26,805 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:07:26,807 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 10:07:26,813 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-24 10:11:40,961 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 10:11:40,983 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 22180 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 10:11:40,984 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 10:11:41,020 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 10:11:41,020 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 10:11:41,616 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 10:11:41,656 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2023-12-24 10:11:42,173 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 10:11:42,181 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 10:11:42,183 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 10:11:42,183 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 10:11:42,211 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 10:11:42,212 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1192 ms
+2023-12-24 10:11:42,247 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 10:11:42,442 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d45de4a
+2023-12-24 10:11:42,443 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 10:11:42,453 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 10:11:42,571 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 10:11:42,609 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 10:11:42,630 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 10:11:42,774 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 10:11:43,444 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 10:11:43,480 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:11:43,679 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 10:11:44,420 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 10:11:44,695 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31776ab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@207a2dfd, org.springframework.security.web.context.SecurityContextHolderFilter@2476aa02, org.springframework.security.web.header.HeaderWriterFilter@19c516db, org.springframework.security.web.authentication.logout.LogoutFilter@4b142f5f, uz.pdp.shorturl.config.security.JwtTokenFilter@23eaccb3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d5da722, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45d1b89f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@369ffbc8, org.springframework.security.web.session.SessionManagementFilter@59b06c1c, org.springframework.security.web.access.ExceptionTranslationFilter@4b6419af, org.springframework.security.web.access.intercept.AuthorizationFilter@3f239da1]
+2023-12-24 10:11:45,089 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 10:11:45,107 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 10:11:45,118 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 10:11:45,129 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 4.668 seconds (process running for 5.113)
+2023-12-24 10:11:49,243 INFO               org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 10:11:49,243 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-24 10:11:49,245 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-24 10:11:49,381 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-1] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/url*
+*errorCode : 500*
+*developerMessage* : `Access Denied`
+
+2023-12-24 10:11:51,519 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.security.access.AccessDeniedException: Access Denied]
+2023-12-24 10:38:52,772 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:38:52,776 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 10:38:52,786 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-24 10:38:56,395 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 10:38:56,418 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 23772 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 10:38:56,418 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 10:38:56,454 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 10:38:56,454 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 10:38:57,049 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 10:38:57,090 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2023-12-24 10:38:57,606 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 10:38:57,614 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 10:38:57,616 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 10:38:57,616 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 10:38:57,644 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 10:38:57,644 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1190 ms
+2023-12-24 10:38:57,679 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 10:38:57,874 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1412af81
+2023-12-24 10:38:57,875 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 10:38:57,885 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 10:38:58,007 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 10:38:58,041 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 10:38:58,063 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 10:38:58,214 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 10:38:58,879 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 10:38:58,909 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:38:59,108 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 10:38:59,835 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 10:39:00,119 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@207a2dfd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23eaccb3, org.springframework.security.web.context.SecurityContextHolderFilter@7e7cf21c, org.springframework.security.web.header.HeaderWriterFilter@7dab818b, org.springframework.security.web.authentication.logout.LogoutFilter@5b6c096c, uz.pdp.shorturl.config.security.JwtTokenFilter@369ffbc8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45d1b89f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54663c9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e85619e, org.springframework.security.web.session.SessionManagementFilter@2f139029, org.springframework.security.web.access.ExceptionTranslationFilter@5f0b0886, org.springframework.security.web.access.intercept.AuthorizationFilter@35e6dea7]
+2023-12-24 10:39:00,554 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 10:39:00,575 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 10:39:00,586 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 10:39:00,597 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 4.691 seconds (process running for 5.143)
+2023-12-24 10:39:10,812 INFO               org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 10:39:10,812 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-24 10:39:10,813 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-24 10:39:11,337 INFO          org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-9] Init duration for springdoc-openapi is: 212 ms
+2023-12-24 10:46:23,360 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:46:23,364 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 10:46:23,371 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-24 10:46:26,657 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 10:46:26,683 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 24607 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 10:46:26,684 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 10:46:26,728 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 10:46:26,728 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 10:46:27,389 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 10:46:27,565 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 171 ms. Found 3 JPA repository interfaces.
+2023-12-24 10:46:28,544 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 10:46:28,560 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 10:46:28,562 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 10:46:28,563 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 10:46:28,614 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 10:46:28,614 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1885 ms
+2023-12-24 10:46:28,661 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 10:46:29,083 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3139bcaa
+2023-12-24 10:46:29,087 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 10:46:29,102 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 10:46:29,315 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 10:46:29,392 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 10:46:29,437 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 10:46:29,832 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 10:46:31,272 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 10:46:31,324 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:46:31,661 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 10:46:32,725 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 10:46:33,140 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@38b742da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b47423e, org.springframework.security.web.context.SecurityContextHolderFilter@4efd3b2d, org.springframework.security.web.header.HeaderWriterFilter@746dbcd7, org.springframework.security.web.authentication.logout.LogoutFilter@4b18270c, uz.pdp.shorturl.config.security.JwtTokenFilter@39e53061, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5230f8bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@715b09a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14b67794, org.springframework.security.web.session.SessionManagementFilter@2c075ee8, org.springframework.security.web.access.ExceptionTranslationFilter@32d161d2, org.springframework.security.web.access.intercept.AuthorizationFilter@24e2e426]
+2023-12-24 10:46:33,753 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 10:46:33,783 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 10:46:33,810 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 10:46:33,835 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 7.725 seconds (process running for 8.269)
+2023-12-24 10:46:35,545 INFO               org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 10:46:35,546 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-24 10:46:35,547 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-24 10:47:17,748 WARN      com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s560ms290µs406ns).
+2023-12-24 10:53:32,755 WARN      com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m15s7ms372µs817ns).
+2023-12-24 10:53:32,847 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:53:32,852 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 10:53:32,860 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-24 10:53:36,858 INFO      org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-12-24 10:53:36,881 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringbootApplication using Java 21.0.1 with PID 25295 (/home/baxodir/IdeaProjects/java/projects/shorturl/target/classes started by baxodir in /home/baxodir/IdeaProjects/java/projects/shorturl)
+2023-12-24 10:53:36,882 INFO         org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-12-24 10:53:36,926 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 10:53:36,926 INFO       org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 10:53:37,607 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 10:53:37,792 INFO .repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 179 ms. Found 3 JPA repository interfaces.
+2023-12-24 10:53:38,702 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2023-12-24 10:53:38,714 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-24 10:53:38,716 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-12-24 10:53:38,717 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-24 10:53:38,762 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-12-24 10:53:38,763 INFO servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1837 ms
+2023-12-24 10:53:38,809 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-12-24 10:53:39,257 INFO                  com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4b9c19e2
+2023-12-24 10:53:39,259 INFO                 com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-12-24 10:53:39,276 INFO k.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/shorturl'
+2023-12-24 10:53:39,494 INFO          org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-24 10:53:39,578 INFO                              org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.1.Final
+2023-12-24 10:53:39,645 INFO rg.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2023-12-24 10:53:39,994 INFO .orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-24 10:53:41,398 INFO saction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-24 10:53:41,451 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:53:41,825 INFO ork.data.jpa.repository.query.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-24 10:53:42,949 WARN e.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 10:53:43,386 INFO gframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f49fa30, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c23889a, org.springframework.security.web.context.SecurityContextHolderFilter@4e75d6a9, org.springframework.security.web.header.HeaderWriterFilter@352bdb90, org.springframework.security.web.authentication.logout.LogoutFilter@6868122b, uz.pdp.shorturl.config.security.JwtTokenFilter@644c4585, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d55faec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49231237, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3632e2c6, org.springframework.security.web.session.SessionManagementFilter@1090993d, org.springframework.security.web.access.ExceptionTranslationFilter@5d714f12, org.springframework.security.web.access.intercept.AuthorizationFilter@3bbd009b]
+2023-12-24 10:53:44,001 INFO ot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-12-24 10:53:44,032 INFO               org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-24 10:53:44,058 INFO framework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2023-12-24 10:53:44,080 INFO         org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootApplication in 7.783 seconds (process running for 8.386)
+2023-12-24 10:53:47,706 INFO               org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 10:53:47,706 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-24 10:53:47,708 INFO   org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-24 10:53:47,877 ERROR dp.shorturl.config.handlers.GlobalExceptionHandler [http-nio-8080-exec-1] Server Error : 
+
+*friendlyMessage : Internal Server Error*
+*errorPath : /api/url/report*
+*errorCode : 500*
+*developerMessage* : `Access Denied`
+
+2023-12-24 10:53:52,495 WARN b.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.security.access.AccessDeniedException: Access Denied]
+2023-12-24 11:33:41,782 INFO framework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 11:33:41,788 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-24 11:33:41,795 INFO                 com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
